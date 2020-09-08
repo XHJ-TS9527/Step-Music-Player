@@ -1,0 +1,110 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/popupwindow_background">
+
+    <RelativeLayout
+        android:id="@+id/search_window_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/search_window_title"
+            android:textColor="#FFFF"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/search_window_exit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/exit_icon"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_window_title"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search_icon"/>
+
+        <EditText
+            android:id="@+id/search_song_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="?attr/theme_color"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:hint="请输入需要搜索的歌曲名"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/search_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_zone"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/submit_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/btn_background"
+                android:layout_marginRight="80dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="搜索"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:layout_marginEnd="80dp" />
+
+            <Button
+                android:id="@+id/reset_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/btn_background"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="清空"
+                android:textColor="#FFFF"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

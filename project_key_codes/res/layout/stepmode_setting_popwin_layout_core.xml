@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/stepmode_radiobutton_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stepmode_title"
+            android:layout_marginTop="5dp">
+            <RadioButton
+                android:id="@+id/radiobtn_select_nostep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@mipmap/nostep"
+                android:text="不测速"
+                android:textColor="?attr/theme_color"
+                android:textSize="25dp"
+                android:drawableEnd="@mipmap/nostep" />
+            <RadioButton
+                android:id="@+id/radiobtn_select_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@mipmap/footstep"
+                android:text="计步采样"
+                android:textColor="?attr/theme_color"
+                android:textSize="25dp"
+                android:drawableEnd="@mipmap/footstep" />
+            <RadioButton
+                android:id="@+id/radiobtn_select_GPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@mipmap/gps"
+                android:text="GPS测速"
+                android:textColor="?attr/theme_color"
+                android:textSize="25dp"
+                android:drawableEnd="@mipmap/gps" />
+            <RadioButton
+                android:id="@+id/radiobtn_select_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@mipmap/network"
+                android:text="网络测速"
+                android:textColor="?attr/theme_color"
+                android:textSize="25dp"
+                android:drawableEnd="@mipmap/network" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/lowest_speed_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stepmode_radiobutton_group"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1x速度"
+                android:textColor="?attr/theme_color"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/lowest_speed_edittext"
+                android:layout_weight="2.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_color"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="m/s"
+                android:textSize="25dp"
+                android:textColor="?attr/theme_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/standard_speed_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lowest_speed_zone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1.5x速度"
+                android:textColor="?attr/theme_color"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/standard_speed_edittext"
+                android:layout_weight="2.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_color"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="m/s"
+                android:textSize="25dp"
+                android:textColor="?attr/theme_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/changing_weight_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/standard_speed_zone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="变化因数"
+                android:textColor="?attr/theme_color"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:id="@+id/changing_weight_edittext"
+                android:layout_weight="2.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?attr/theme_color"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="∈[0,1]"
+                android:textSize="20dp"
+                android:textColor="?attr/theme_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changing_weight_zone"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/submit_stepmode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/btn_background"
+                android:layout_marginRight="80dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/confirm_text"
+                android:textColor="#FFFF"
+                android:textSize="20sp"
+                android:layout_marginEnd="80dp" />
+
+            <Button
+                android:id="@+id/reset_stepmode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/btn_background"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/reset_text"
+                android:textColor="#FFFF"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

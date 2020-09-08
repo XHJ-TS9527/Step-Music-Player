@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.example.step_music_player.UI.circle_imageview
+        android:id="@+id/playzone_album_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/default_album_photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/playzone_seekbar_speed"
+                    android:layout_weight="0.48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1.00x"
+                    android:gravity="center"
+                    android:textColor="?attr/theme_color"
+                    android:layout_gravity="center_vertical" />
+
+                <SeekBar
+                    android:id="@+id/playzone_seekbar"
+                    android:layout_weight="1.7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:splitTrack="false"
+                    android:progressDrawable="?attr/seekbar_progress_background"
+                    android:thumb="?attr/seekbar_thumb_icon"
+                    android:thumbOffset="6dp" />
+
+                <TextView
+                    android:id="@+id/playzone_seekbar_time"
+                    android:layout_weight="0.48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0:00"
+                    android:textColor="?attr/theme_color"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+                
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+                    
+                    <com.example.step_music_player.animations.MoveTextView
+                        android:id="@+id/playzone_songname"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:gravity="left"
+                        android:text="歌曲名"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <com.example.step_music_player.animations.MoveTextView
+                        android:id="@+id/playzone_songartist"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:gravity="left"
+                        android:text="歌手"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/stepmode_icon"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/nostep"
+                        />
+
+                    <ImageView
+                        android:id="@+id/playmode_icon"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ordered"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/playzone_fronticon"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/front_button_icon" />
+
+                <ImageView
+                    android:id="@+id/playzone_play_pause_icon"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/big_play_icon" />
+
+                <ImageView
+                    android:id="@+id/playzone_nexticon"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/next_button_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

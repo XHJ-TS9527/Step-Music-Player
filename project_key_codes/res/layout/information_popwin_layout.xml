@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/popupwindow_background">
+
+    <RelativeLayout
+        android:id="@+id/info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/information_window_title"
+            android:textColor="#FFFF"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/info_checking_exit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/exit_icon"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_title"
+        android:layout_marginLeft="25dp"
+        android:text="欢迎使用!"
+        android:textColor="?attr/theme_color"
+        android:maxLines="9"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/info_refresh_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_detail"
+        android:layout_marginTop="5dp"
+        android:text="您好"
+        android:textSize="25dp"
+        android:textColor="?attr/theme_color"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        />
+
+</RelativeLayout>

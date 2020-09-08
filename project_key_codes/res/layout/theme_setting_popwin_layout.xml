@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/popupwindow_background">
+    <RelativeLayout
+        android:id="@+id/theme_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/theme_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/theme_select_window_title"
+            android:textColor="#FFFF"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/theme_setting_exit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/exit_icon"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/theme_select_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme_setting_top"
+        android:layout_marginTop="5dp">
+        <RadioButton
+            android:id="@+id/radiobtn_select_keitaro_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/keitaro_theme_icon"
+            android:text="@string/theme_keitaro_name"
+            android:textColor="@color/Keitaro_green"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/keitaro_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_natsumi_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/natsumi_theme_icon"
+            android:text="@string/theme_natsumi_name"
+            android:textColor="@color/Natsumi_blue"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/natsumi_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_hiro_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/hiro_theme_icon"
+            android:text="@string/theme_hiro_name"
+            android:textColor="@color/Hiro_orange"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/hiro_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_yoichi_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/yoichi_theme_icon"
+            android:text="@string/theme_yoichi_name"
+            android:textColor="@color/Yoichi_purple"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/yoichi_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_hunter_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/hunter_theme_icon"
+            android:text="@string/theme_hunter_name"
+            android:textColor="@color/Hunter_yellow"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/hunter_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_taiga_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@mipmap/taiga_theme_icon"
+            android:text="@string/theme_taiga_name"
+            android:textColor="@color/Taiga_red"
+            android:textSize="25dp"
+            android:drawableEnd="@mipmap/taiga_theme_icon" />
+        <RadioButton
+            android:id="@+id/radiobtn_select_default_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/theme_default_name"
+            android:textColor="@color/Defalt_black"
+            android:textSize="25dp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/submit_theme_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theme_select_button_group"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/btn_background"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/confirm_text"
+        android:textColor="#FFFF"
+        android:textSize="20sp"/>
+</RelativeLayout>
