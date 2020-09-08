@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_set_theme"
+        android:title="搜索歌曲" />
+
+    <item
+        android:id="@+id/menu_set_step_mode"
+        android:title="刷新歌单" />
+
+    <item
+        android:id="@+id/menu_set_playmode"
+        android:title="后台数据" />
+
+</menu>
