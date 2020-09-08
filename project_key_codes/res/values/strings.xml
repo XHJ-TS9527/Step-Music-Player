@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">步奏Player</string>
+    <string name="author_info">2017信工5班\t许皓钧</string>
+    <string name="author_number">201730256488</string>
+    <string name="respect">献给学校并致敬于CampBuddy</string>
+    <string name="theme_select_window_title">主题选择</string>
+    <string name="stepmode_select_window_title">步奏设置</string>
+    <string name="playmode_select_window_title">播放模式</string>
+    <string name="preference_select_window_title">偏好设置</string>
+    <string name="search_window_title">搜索歌曲</string>
+    <string name="information_window_title">后台数据</string>
+    <string name="theme_keitaro_name">Keitaro-Green</string>
+    <string name="theme_natsumi_name">Natsumi-Blue</string>
+    <string name="theme_hiro_name">Hiro-Orange</string>
+    <string name="theme_yoichi_name">Yoichi-Purple</string>
+    <string name="theme_hunter_name">Hunter-Yellow</string>
+    <string name="theme_taiga_name">Taiga-Red</string>
+    <string name="theme_default_name">Default-Black</string>
+    <string name="confirm_text">确认</string>
+    <string name="reset_text">重置</string>
+</resources>

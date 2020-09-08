@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="preferenceset">
+        <attr name="theme_color" format="reference" />
+        <attr name="popupwindow_background" format="reference" />
+        <attr name="btn_background" format="reference" />
+        <attr name="seekbar_progress_background" format="reference" />
+        <attr name="small_play_icon" format="reference" />
+        <attr name="front_button_icon" format="reference" />
+        <attr name="next_button_icon" format="reference" />
+        <attr name="big_play_icon" format="reference" />
+        <attr name="big_pause_icon" format="reference" />
+        <attr name="seekbar_thumb_icon" format="reference" />
+        <attr name="listview_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

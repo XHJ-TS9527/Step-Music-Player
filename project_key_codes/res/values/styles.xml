@@ -1,0 +1,181 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="StartTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/start_page</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Keitaro_green</item>
+        <item name="colorPrimaryDark">@color/Keitaro_green</item>
+        <item name="colorAccent">@color/Keitaro_green</item>
+        <item name="theme_color">@color/Keitaro_green</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_keitaro_green</item>
+        <item name="btn_background">@drawable/btn_bg_keitaro_green</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_keitaro_green</item>
+        <item name="small_play_icon">@mipmap/keitaro_small_play3</item>
+        <item name="next_button_icon">@mipmap/keitaro_front</item>
+        <item name="front_button_icon">@mipmap/keitaro_back</item>
+        <item name="big_play_icon">@mipmap/keitaro_big_play</item>
+        <item name="big_pause_icon">@mipmap/keitaro_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/keitaro_seekbar</item>
+        <item name="listview_background">@mipmap/keitaro_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="popupMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Keitaro_green">
+        <item name="colorPrimary">@color/Keitaro_green</item>
+        <item name="colorPrimaryDark">@color/Keitaro_green</item>
+        <item name="colorAccent">@color/Keitaro_green</item>
+        <item name="theme_color">@color/Keitaro_green</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_keitaro_green</item>
+        <item name="btn_background">@drawable/btn_bg_keitaro_green</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_keitaro_green</item>
+        <item name="small_play_icon">@mipmap/keitaro_small_play3</item>
+        <item name="next_button_icon">@mipmap/keitaro_front</item>
+        <item name="front_button_icon">@mipmap/keitaro_back</item>
+        <item name="big_play_icon">@mipmap/keitaro_big_play</item>
+        <item name="big_pause_icon">@mipmap/keitaro_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/keitaro_seekbar</item>
+        <item name="listview_background">@mipmap/keitaro_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Natsumi_blue">
+        <item name="colorPrimary">@color/Natsumi_blue</item>
+        <item name="colorPrimaryDark">@color/Natsumi_blue</item>
+        <item name="colorAccent">@color/Natsumi_blue</item>
+        <item name="theme_color">@color/Natsumi_blue</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_natsumi_blue</item>
+        <item name="btn_background">@drawable/btn_bg_natsumi_blue</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_natsumi_blue</item>
+        <item name="small_play_icon">@mipmap/natsumi_small_play3</item>
+        <item name="front_button_icon">@mipmap/natsumi_back</item>
+        <item name="next_button_icon">@mipmap/natsumi_front</item>
+        <item name="big_play_icon">@mipmap/natsumi_big_play</item>
+        <item name="big_pause_icon">@mipmap/natsumi_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/natsumi_seekbar</item>
+        <item name="listview_background">@mipmap/natsumi_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Hiro_orange">
+        <item name="colorPrimary">@color/Hiro_orange</item>
+        <item name="colorPrimaryDark">@color/Hiro_orange</item>
+        <item name="colorAccent">@color/Hiro_orange</item>
+        <item name="theme_color">@color/Hiro_orange</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_hiro_orange</item>
+        <item name="btn_background">@drawable/btn_bg_hiro_orange</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_hiro_orange</item>
+        <item name="small_play_icon">@mipmap/hiro_small_play3</item>
+        <item name="front_button_icon">@mipmap/hiro_back</item>
+        <item name="next_button_icon">@mipmap/hiro_front</item>
+        <item name="big_play_icon">@mipmap/hiro_big_play</item>
+        <item name="big_pause_icon">@mipmap/hiro_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/hiro_seekbar</item>
+        <item name="listview_background">@mipmap/hiro_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Yoichi_purple">
+        <item name="colorPrimary">@color/Yoichi_purple</item>
+        <item name="colorPrimaryDark">@color/Yoichi_purple</item>
+        <item name="colorAccent">@color/Yoichi_purple</item>
+        <item name="theme_color">@color/Yoichi_purple</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_yoichi_purple</item>
+        <item name="btn_background">@drawable/btn_bg_yoichi_purple</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_yoichi_purple</item>
+        <item name="small_play_icon">@mipmap/yoichi_small_play3</item>
+        <item name="front_button_icon">@mipmap/yoichi_back</item>
+        <item name="next_button_icon">@mipmap/yoichi_front</item>
+        <item name="big_play_icon">@mipmap/yoichi_big_play</item>
+        <item name="big_pause_icon">@mipmap/yoichi_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/yoichi_seekbar</item>
+        <item name="listview_background">@mipmap/yoichi_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Hunter_yellow">
+        <item name="colorPrimary">@color/Hunter_yellow</item>
+        <item name="colorPrimaryDark">@color/Hunter_yellow</item>
+        <item name="colorAccent">@color/Hunter_yellow</item>
+        <item name="theme_color">@color/Hunter_yellow</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_hunter_yellow</item>
+        <item name="btn_background">@drawable/btn_bg_hunter_yellow</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_hunter_yellow</item>
+        <item name="small_play_icon">@mipmap/hunter_small_play3</item>
+        <item name="front_button_icon">@mipmap/hunter_back</item>
+        <item name="next_button_icon">@mipmap/hunter_front</item>
+        <item name="big_play_icon">@mipmap/hunter_big_play</item>
+        <item name="big_pause_icon">@mipmap/hunter_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/hunter_seekbar</item>
+        <item name="listview_background">@mipmap/hunter_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Taiga_red">
+        <item name="colorPrimary">@color/Taiga_red</item>
+        <item name="colorPrimaryDark">@color/Taiga_red</item>
+        <item name="colorAccent">@color/Taiga_red</item>
+        <item name="theme_color">@color/Taiga_red</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_taiga_red</item>
+        <item name="btn_background">@drawable/btn_bg_taiga_red</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_taiga_red</item>
+        <item name="small_play_icon">@mipmap/taiga_small_play3</item>
+        <item name="front_button_icon">@mipmap/taiga_back</item>
+        <item name="next_button_icon">@mipmap/taiga_front</item>
+        <item name="big_play_icon">@mipmap/taiga_big_play</item>
+        <item name="big_pause_icon">@mipmap/taiga_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/taiga_seekbar</item>
+        <item name="listview_background">@mipmap/taiga_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="Default_black">
+        <item name="colorPrimary">@color/Defalt_black</item>
+        <item name="colorPrimaryDark">@color/Defalt_black</item>
+        <item name="colorAccent">@color/Defalt_black</item>
+        <item name="theme_color">@color/Defalt_black</item>
+        <item name="popupwindow_background">@drawable/popwin_bg_default_black</item>
+        <item name="btn_background">@drawable/btn_bg_default_black</item>
+        <item name="seekbar_progress_background">@drawable/seekbar_bg_default_black</item>
+        <item name="small_play_icon">@mipmap/default_small_play3</item>
+        <item name="front_button_icon">@mipmap/default_back</item>
+        <item name="next_button_icon">@mipmap/default_front</item>
+        <item name="big_play_icon">@mipmap/default_big_play</item>
+        <item name="big_pause_icon">@mipmap/default_big_pause</item>
+        <item name="seekbar_thumb_icon">@mipmap/default_seekbar</item>
+        <item name="listview_background">@mipmap/default_background</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/OverflowMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenu</item>
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <item name="android:itemBackground">?attr/colorPrimary</item>
+        <item name="android:divider">#FFFFFF</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+</resources>
