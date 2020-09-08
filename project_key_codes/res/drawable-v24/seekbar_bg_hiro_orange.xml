@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/seekbar_bg"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+        <shape>
+            <solid android:color="#DCDCDC" />
+        </shape>
+    </item>
+    <item
+        android:id="@+id/second_progress"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+        <clip>
+            <shape>
+                <solid android:color="@color/Hiro_orange" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@+id/seekbar_progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/Hiro_orange" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
