@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.step_music_player">
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/icon_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/StartTheme">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name="com.example.step_music_player.playing_service.headphone_operation">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".playing_service.broadcast_coper"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="FRONT" />
+                <action android:name="PLAYPAUSE" />
+                <action android:name="NEXT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <!--Permission statment-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+</manifest>
